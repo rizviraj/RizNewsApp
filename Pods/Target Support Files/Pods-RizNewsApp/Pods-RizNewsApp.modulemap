@@ -1,0 +1,6 @@
+framework module Pods_RizNewsApp {
+  umbrella header "Pods-RizNewsApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
