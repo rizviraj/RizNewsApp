@@ -1,0 +1,57 @@
+PODS:
+  - Alamofire (4.8.2)
+  - AlamofireImage (3.5.2):
+    - Alamofire (~> 4.8)
+  - FTPopOverMenu_Swift (0.2.0)
+  - HexColors (6.0.0)
+  - IQKeyboardManager (6.4.0)
+  - NVActivityIndicatorView (4.7.0):
+    - NVActivityIndicatorView/Presenter (= 4.7.0)
+  - NVActivityIndicatorView/Presenter (4.7.0)
+  - Realm (3.17.1):
+    - Realm/Headers (= 3.17.1)
+  - Realm/Headers (3.17.1)
+  - RealmSwift (3.17.1):
+    - Realm (= 3.17.1)
+  - RxCocoa (5.0.0):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.0.0):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.0)
+  - SnapKit (5.0.0)
+  - SwiftMessages (7.0.0):
+    - SwiftMessages/App (= 7.0.0)
+  - SwiftMessages/App (7.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireImage
+  - FTPopOverMenu_Swift
+  - HexColors
+  - IQKeyboardManager
+  - NVActivityIndicatorView
+  - RealmSwift
+  - RxCocoa
+  - RxSwift
+  - SnapKit
+  - SwiftMessages
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  AlamofireImage: 63cfe3baf1370be6c498149687cf6db3e3b00999
+  FTPopOverMenu_Swift: 44d95f702ef643f902c60d7e49553dfc0e874dac
+  HexColors: f8c66339541a74bb08905bfe7cd4f8cc85e9e173
+  IQKeyboardManager: fcef267266379c003181fc3592f6bdb8bf4db839
+  NVActivityIndicatorView: b19ddab2576f805cbe0fb2306cba3476e09a1dea
+  Realm: c204f1a890f07dea43b14132a6aad118c054b8f2
+  RealmSwift: 4d3c9233544b9cd08a8913e0872b9038eb99b054
+  RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
+  RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
+  SwiftMessages: a952f7a9103d9aeab93730a2861d2d8fcdd8758f
+
+PODFILE CHECKSUM: e8766569decc919425eeaab923266cbc213daee6
+
+COCOAPODS: 1.4.0
