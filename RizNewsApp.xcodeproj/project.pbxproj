@@ -1,0 +1,968 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A773B83C3DC833DCA662F53 /* Pods_RizNewsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02452BF772D9858CFCED02FC /* Pods_RizNewsApp.framework */; };
+		7E3AFE2A2495FD540085681F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3AFE292495FD540085681F /* Coordinator.swift */; };
+		7E3AFE2C2495FD8F0085681F /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3AFE2B2495FD8F0085681F /* LoginCoordinator.swift */; };
+		7E3AFE32249616C60085681F /* RZ_LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3AFE31249616C60085681F /* RZ_LoginViewModel.swift */; };
+		7E3AFE342496186D0085681F /* RegisterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3AFE332496186D0085681F /* RegisterCoordinator.swift */; };
+		7E3AFE3624962EF30085681F /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3AFE3524962EF30085681F /* HomeCoordinator.swift */; };
+		7E3AFE38249635430085681F /* RZ_MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3AFE37249635430085681F /* RZ_MainTabView.swift */; };
+		7E3AFE3A249637620085681F /* FavouriteCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3AFE39249637620085681F /* FavouriteCoordinator.swift */; };
+		7E3AFE3C2496384E0085681F /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3AFE3B2496384E0085681F /* ProfileCoordinator.swift */; };
+		7E3AFE3E249641E80085681F /* NewsDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3AFE3D249641E80085681F /* NewsDetailCoordinator.swift */; };
+		7E3AFE4024964DE20085681F /* NewsWebCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3AFE3F24964DE20085681F /* NewsWebCoordinator.swift */; };
+		7E3AFE42249663310085681F /* RZ_NewsWebsiteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3AFE41249663310085681F /* RZ_NewsWebsiteViewModel.swift */; };
+		7E3AFE44249719ED0085681F /* Coordinator+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3AFE43249719ED0085681F /* Coordinator+Extension.swift */; };
+		7E3AFE4A249723E90085681F /* NewsCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3AFE49249723E90085681F /* NewsCell+Extension.swift */; };
+		7E3AFE4C249724000085681F /* NewsDetailCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3AFE4B249724000085681F /* NewsDetailCell+Extension.swift */; };
+		A00A5A0E234A0F06000F5618 /* RZ_TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00A5A0D234A0F06000F5618 /* RZ_TextField.swift */; };
+		A00E355B2347927500935F97 /* RZ_NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00E355A2347927500935F97 /* RZ_NewsModel.swift */; };
+		A0114F52234B2847006D2238 /* RZ_String.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0114F51234B2847006D2238 /* RZ_String.swift */; };
+		A01C7326234B1EFD000EAE53 /* RZ_LoginView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01C7325234B1EFD000EAE53 /* RZ_LoginView+Extension.swift */; };
+		A01C7328234B1F37000EAE53 /* RZ_RegisterView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01C7327234B1F37000EAE53 /* RZ_RegisterView+Extension.swift */; };
+		A01E17752347A179002B8880 /* RZ_Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01E17742347A179002B8880 /* RZ_Constant.swift */; };
+		A01E17772347AACA002B8880 /* RZ_NewsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01E17762347AACA002B8880 /* RZ_NewsTableCell.swift */; };
+		A01E17792347AF85002B8880 /* RZ_Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01E17782347AF84002B8880 /* RZ_Utility.swift */; };
+		A02B5CC02348F9760059CA70 /* RZ_NewsDetailTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02B5CBF2348F9760059CA70 /* RZ_NewsDetailTableCell.swift */; };
+		A02B5CC22348FD3C0059CA70 /* RZ_NewsDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02B5CC12348FD3C0059CA70 /* RZ_NewsDetailViewModel.swift */; };
+		A03027592347B812002A82FD /* RZ_BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03027582347B812002A82FD /* RZ_BaseCell.swift */; };
+		A033C51323488B4E00060C5A /* RZ_HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A033C51223488B4E00060C5A /* RZ_HomeViewModel.swift */; };
+		A03515AF23477E8600CDD2A9 /* RZ_BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03515AE23477E8600CDD2A9 /* RZ_BaseView.swift */; };
+		A03515B3234780A400CDD2A9 /* RZ_NewsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03515B2234780A400CDD2A9 /* RZ_NewsDetailView.swift */; };
+		A03515B5234784B000CDD2A9 /* RZ_GeneralService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03515B4234784B000CDD2A9 /* RZ_GeneralService.swift */; };
+		A03515B72347856D00CDD2A9 /* RZ_Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03515B62347856D00CDD2A9 /* RZ_Services.swift */; };
+		A03515B92347860D00CDD2A9 /* RZ_NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03515B82347860D00CDD2A9 /* RZ_NewsViewModel.swift */; };
+		A065ECC3234A61C800932587 /* RZ_RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A065ECC2234A61C800932587 /* RZ_RegisterViewModel.swift */; };
+		A0710A5F234A39B7005A2CC7 /* RZ_ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0710A5E234A39B7005A2CC7 /* RZ_ProfileViewModel.swift */; };
+		A0710A61234A3B5F005A2CC7 /* RZ_ProfileView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0710A60234A3B5F005A2CC7 /* RZ_ProfileView+Extension.swift */; };
+		A085A4692349B0F800A2890E /* RZ_NewsDetailView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A085A4682349B0F800A2890E /* RZ_NewsDetailView+Extension.swift */; };
+		A085A46B2349B25700A2890E /* RZ_NewsWebsite.swift in Sources */ = {isa = PBXBuildFile; fileRef = A085A46A2349B25700A2890E /* RZ_NewsWebsite.swift */; };
+		A085A46D2349C4D500A2890E /* RZ_NewsWebsite+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A085A46C2349C4D500A2890E /* RZ_NewsWebsite+Extension.swift */; };
+		A085A46F2349C67900A2890E /* RZ_HomeView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A085A46E2349C67900A2890E /* RZ_HomeView+Extension.swift */; };
+		A085A4712349C70B00A2890E /* RZ_FavouriteView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A085A4702349C70B00A2890E /* RZ_FavouriteView+Extension.swift */; };
+		A0F324212348981000199209 /* RZ_ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F324202348981000199209 /* RZ_ActivityIndicatorView.swift */; };
+		A0F32423234899AB00199209 /* RZ_Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F32422234899AB00199209 /* RZ_Messages.swift */; };
+		A0F55F7223476C250029C773 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F55F7123476C250029C773 /* AppDelegate.swift */; };
+		A0F55F7423476C250029C773 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F55F7323476C250029C773 /* ViewController.swift */; };
+		A0F55F7723476C250029C773 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0F55F7523476C250029C773 /* Main.storyboard */; };
+		A0F55F7A23476C250029C773 /* RizNewsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A0F55F7823476C250029C773 /* RizNewsApp.xcdatamodeld */; };
+		A0F55F7C23476C330029C773 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0F55F7B23476C330029C773 /* Assets.xcassets */; };
+		A0F55F7F23476C330029C773 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0F55F7D23476C330029C773 /* LaunchScreen.storyboard */; };
+		A0F55F8A23476C330029C773 /* RizNewsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F55F8923476C330029C773 /* RizNewsAppTests.swift */; };
+		A0F55F9B23476F830029C773 /* RZ_HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F55F9A23476F830029C773 /* RZ_HomeView.swift */; };
+		A0F55F9D23476FDA0029C773 /* RZ_FavouriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F55F9C23476FDA0029C773 /* RZ_FavouriteView.swift */; };
+		A0F99F662348CFAF007125EE /* RZ_FavouriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F99F652348CFAF007125EE /* RZ_FavouriteViewModel.swift */; };
+		A0FA3AFB2347789500F88426 /* RZ_ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FA3AFA2347789500F88426 /* RZ_ProfileView.swift */; };
+		A0FB91E22349FD2700A2DA60 /* RZ_UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FB91E12349FD2700A2DA60 /* RZ_UserModel.swift */; };
+		A0FB91E52349FF6B00A2DA60 /* RZ_LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FB91E42349FF6B00A2DA60 /* RZ_LoginView.swift */; };
+		A0FB91E72349FF8000A2DA60 /* RZ_RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FB91E62349FF8000A2DA60 /* RZ_RegisterView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A0F55F8623476C330029C773 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0F55F6623476C250029C773 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0F55F6D23476C250029C773;
+			remoteInfo = RizNewsApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02452BF772D9858CFCED02FC /* Pods_RizNewsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RizNewsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71EB73C621BF3414EDE96CD4 /* Pods-RizNewsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RizNewsApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RizNewsApp/Pods-RizNewsApp.debug.xcconfig"; sourceTree = "<group>"; };
+		7E3AFE292495FD540085681F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Coordinator.swift; path = "../New Group/Coordinator.swift"; sourceTree = "<group>"; };
+		7E3AFE2B2495FD8F0085681F /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		7E3AFE31249616C60085681F /* RZ_LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZ_LoginViewModel.swift; sourceTree = "<group>"; };
+		7E3AFE332496186D0085681F /* RegisterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCoordinator.swift; sourceTree = "<group>"; };
+		7E3AFE3524962EF30085681F /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		7E3AFE37249635430085681F /* RZ_MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZ_MainTabView.swift; sourceTree = "<group>"; };
+		7E3AFE39249637620085681F /* FavouriteCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteCoordinator.swift; sourceTree = "<group>"; };
+		7E3AFE3B2496384E0085681F /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
+		7E3AFE3D249641E80085681F /* NewsDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailCoordinator.swift; sourceTree = "<group>"; };
+		7E3AFE3F24964DE20085681F /* NewsWebCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsWebCoordinator.swift; sourceTree = "<group>"; };
+		7E3AFE41249663310085681F /* RZ_NewsWebsiteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZ_NewsWebsiteViewModel.swift; sourceTree = "<group>"; };
+		7E3AFE43249719ED0085681F /* Coordinator+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Coordinator+Extension.swift"; sourceTree = "<group>"; };
+		7E3AFE49249723E90085681F /* NewsCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "NewsCell+Extension.swift"; path = "RizNewsApp/Classes/Coordinator/NewsCell+Extension.swift"; sourceTree = SOURCE_ROOT; };
+		7E3AFE4B249724000085681F /* NewsDetailCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewsDetailCell+Extension.swift"; sourceTree = "<group>"; };
+		A00A5A0D234A0F06000F5618 /* RZ_TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZ_TextField.swift; sourceTree = "<group>"; };
+		A00E355A2347927500935F97 /* RZ_NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZ_NewsModel.swift; sourceTree = "<group>"; };
+		A0114F51234B2847006D2238 /* RZ_String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZ_String.swift; sourceTree = "<group>"; };
+		A01C7325234B1EFD000EAE53 /* RZ_LoginView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RZ_LoginView+Extension.swift"; sourceTree = "<group>"; };
+		A01C7327234B1F37000EAE53 /* RZ_RegisterView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RZ_RegisterView+Extension.swift"; sourceTree = "<group>"; };
+		A01E17742347A179002B8880 /* RZ_Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZ_Constant.swift; sourceTree = "<group>"; };
+		A01E17762347AACA002B8880 /* RZ_NewsTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZ_NewsTableCell.swift; sourceTree = "<group>"; };
+		A01E17782347AF84002B8880 /* RZ_Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZ_Utility.swift; sourceTree = "<group>"; };
+		A02B5CBF2348F9760059CA70 /* RZ_NewsDetailTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZ_NewsDetailTableCell.swift; sourceTree = "<group>"; };
+		A02B5CC12348FD3C0059CA70 /* RZ_NewsDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZ_NewsDetailViewModel.swift; sourceTree = "<group>"; };
+		A03027582347B812002A82FD /* RZ_BaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZ_BaseCell.swift; sourceTree = "<group>"; };
+		A033C51223488B4E00060C5A /* RZ_HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RZ_HomeViewModel.swift; path = "../New Group1/RZ_HomeViewModel.swift"; sourceTree = "<group>"; };
+		A03515AE23477E8600CDD2A9 /* RZ_BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZ_BaseView.swift; sourceTree = "<group>"; };
+		A03515B2234780A400CDD2A9 /* RZ_NewsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RZ_NewsDetailView.swift; path = "../New Group1/RZ_NewsDetailView.swift"; sourceTree = "<group>"; };
+		A03515B4234784B000CDD2A9 /* RZ_GeneralService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZ_GeneralService.swift; sourceTree = "<group>"; };
+		A03515B62347856D00CDD2A9 /* RZ_Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZ_Services.swift; sourceTree = "<group>"; };
+		A03515B82347860D00CDD2A9 /* RZ_NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RZ_NewsViewModel.swift; path = "../New Group2/RZ_NewsViewModel.swift"; sourceTree = "<group>"; };
+		A065ECC2234A61C800932587 /* RZ_RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RZ_RegisterViewModel.swift; path = "../New Group/RZ_RegisterViewModel.swift"; sourceTree = "<group>"; };
+		A0710A5E234A39B7005A2CC7 /* RZ_ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZ_ProfileViewModel.swift; sourceTree = "<group>"; };
+		A0710A60234A3B5F005A2CC7 /* RZ_ProfileView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RZ_ProfileView+Extension.swift"; sourceTree = "<group>"; };
+		A085A4682349B0F800A2890E /* RZ_NewsDetailView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RZ_NewsDetailView+Extension.swift"; sourceTree = "<group>"; };
+		A085A46A2349B25700A2890E /* RZ_NewsWebsite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZ_NewsWebsite.swift; sourceTree = "<group>"; };
+		A085A46C2349C4D500A2890E /* RZ_NewsWebsite+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RZ_NewsWebsite+Extension.swift"; sourceTree = "<group>"; };
+		A085A46E2349C67900A2890E /* RZ_HomeView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RZ_HomeView+Extension.swift"; sourceTree = "<group>"; };
+		A085A4702349C70B00A2890E /* RZ_FavouriteView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RZ_FavouriteView+Extension.swift"; sourceTree = "<group>"; };
+		A0F324202348981000199209 /* RZ_ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZ_ActivityIndicatorView.swift; sourceTree = "<group>"; };
+		A0F32422234899AB00199209 /* RZ_Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZ_Messages.swift; sourceTree = "<group>"; };
+		A0F55F6E23476C250029C773 /* RizNewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RizNewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0F55F7123476C250029C773 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A0F55F7323476C250029C773 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A0F55F7623476C250029C773 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A0F55F7923476C250029C773 /* RizNewsApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RizNewsApp.xcdatamodel; sourceTree = "<group>"; };
+		A0F55F7B23476C330029C773 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0F55F7E23476C330029C773 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A0F55F8023476C330029C773 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0F55F8523476C330029C773 /* RizNewsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RizNewsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0F55F8923476C330029C773 /* RizNewsAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RizNewsAppTests.swift; sourceTree = "<group>"; };
+		A0F55F8B23476C330029C773 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0F55F9A23476F830029C773 /* RZ_HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZ_HomeView.swift; sourceTree = "<group>"; };
+		A0F55F9C23476FDA0029C773 /* RZ_FavouriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZ_FavouriteView.swift; sourceTree = "<group>"; };
+		A0F99F652348CFAF007125EE /* RZ_FavouriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZ_FavouriteViewModel.swift; sourceTree = "<group>"; };
+		A0FA3AFA2347789500F88426 /* RZ_ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZ_ProfileView.swift; sourceTree = "<group>"; };
+		A0FB91E12349FD2700A2DA60 /* RZ_UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZ_UserModel.swift; sourceTree = "<group>"; };
+		A0FB91E42349FF6B00A2DA60 /* RZ_LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RZ_LoginView.swift; path = "../New Group/RZ_LoginView.swift"; sourceTree = "<group>"; };
+		A0FB91E62349FF8000A2DA60 /* RZ_RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZ_RegisterView.swift; sourceTree = "<group>"; };
+		F56765AEB5ED707A81FCBA75 /* Pods-RizNewsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RizNewsApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-RizNewsApp/Pods-RizNewsApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0F55F6B23476C250029C773 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A773B83C3DC833DCA662F53 /* Pods_RizNewsApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0F55F8223476C330029C773 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6DC97A216C5341BD58D9B550 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02452BF772D9858CFCED02FC /* Pods_RizNewsApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E3AFE282495FD260085681F /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				7E3AFE45249721860085681F /* Main */,
+				7E3AFE46249721A60085681F /* Login */,
+				7E3AFE3524962EF30085681F /* HomeCoordinator.swift */,
+				7E3AFE39249637620085681F /* FavouriteCoordinator.swift */,
+				7E3AFE3B2496384E0085681F /* ProfileCoordinator.swift */,
+				7E3AFE3D249641E80085681F /* NewsDetailCoordinator.swift */,
+				7E3AFE3F24964DE20085681F /* NewsWebCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		7E3AFE45249721860085681F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7E3AFE292495FD540085681F /* Coordinator.swift */,
+				7E3AFE43249719ED0085681F /* Coordinator+Extension.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		7E3AFE46249721A60085681F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				7E3AFE2B2495FD8F0085681F /* LoginCoordinator.swift */,
+				7E3AFE332496186D0085681F /* RegisterCoordinator.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		7E3AFE47249721D90085681F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A065ECC2234A61C800932587 /* RZ_RegisterViewModel.swift */,
+				7E3AFE31249616C60085681F /* RZ_LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		7E3AFE48249723B70085681F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7E3AFE49249723E90085681F /* NewsCell+Extension.swift */,
+				7E3AFE4B249724000085681F /* NewsDetailCell+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7E3AFE4D24974C650085681F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB91E42349FF6B00A2DA60 /* RZ_LoginView.swift */,
+				A0FB91E62349FF8000A2DA60 /* RZ_RegisterView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		7E3AFE4E24974C950085681F /* News */ = {
+			isa = PBXGroup;
+			children = (
+				A03515B2234780A400CDD2A9 /* RZ_NewsDetailView.swift */,
+				A085A46A2349B25700A2890E /* RZ_NewsWebsite.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		7E3AFE4F249754EE0085681F /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				A033C51223488B4E00060C5A /* RZ_HomeViewModel.swift */,
+				A0F99F652348CFAF007125EE /* RZ_FavouriteViewModel.swift */,
+				A0710A5E234A39B7005A2CC7 /* RZ_ProfileViewModel.swift */,
+			);
+			path = TabView;
+			sourceTree = "<group>";
+		};
+		7E3AFE50249755440085681F /* News */ = {
+			isa = PBXGroup;
+			children = (
+				A03515B82347860D00CDD2A9 /* RZ_NewsViewModel.swift */,
+				A02B5CC12348FD3C0059CA70 /* RZ_NewsDetailViewModel.swift */,
+				7E3AFE41249663310085681F /* RZ_NewsWebsiteViewModel.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		A00A5A0C234A0EE1000F5618 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A00A5A0D234A0F06000F5618 /* RZ_TextField.swift */,
+				A0114F51234B2847006D2238 /* RZ_String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A085A4672349B0C500A2890E /* ControllerExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				A085A46E2349C67900A2890E /* RZ_HomeView+Extension.swift */,
+				A085A4702349C70B00A2890E /* RZ_FavouriteView+Extension.swift */,
+				A085A4682349B0F800A2890E /* RZ_NewsDetailView+Extension.swift */,
+				A085A46C2349C4D500A2890E /* RZ_NewsWebsite+Extension.swift */,
+				A0710A60234A3B5F005A2CC7 /* RZ_ProfileView+Extension.swift */,
+				A01C7325234B1EFD000EAE53 /* RZ_LoginView+Extension.swift */,
+				A01C7327234B1F37000EAE53 /* RZ_RegisterView+Extension.swift */,
+			);
+			path = ControllerExtensions;
+			sourceTree = "<group>";
+		};
+		A0F3242423489AE500199209 /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				7E3AFE48249723B70085681F /* Extensions */,
+				A01E17762347AACA002B8880 /* RZ_NewsTableCell.swift */,
+				A03027582347B812002A82FD /* RZ_BaseCell.swift */,
+				A02B5CBF2348F9760059CA70 /* RZ_NewsDetailTableCell.swift */,
+			);
+			path = TableCells;
+			sourceTree = "<group>";
+		};
+		A0F3242523489BE400199209 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A03515B4234784B000CDD2A9 /* RZ_GeneralService.swift */,
+				A03515B62347856D00CDD2A9 /* RZ_Services.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A0F3242623489C0300199209 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A01E17742347A179002B8880 /* RZ_Constant.swift */,
+				A01E17782347AF84002B8880 /* RZ_Utility.swift */,
+				A0F32422234899AB00199209 /* RZ_Messages.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A0F55F6523476C250029C773 = {
+			isa = PBXGroup;
+			children = (
+				A0F55F7023476C250029C773 /* RizNewsApp */,
+				A0F55F8823476C330029C773 /* RizNewsAppTests */,
+				A0F55F6F23476C250029C773 /* Products */,
+				C99043A7B544D0E280869319 /* Pods */,
+				6DC97A216C5341BD58D9B550 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A0F55F6F23476C250029C773 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0F55F6E23476C250029C773 /* RizNewsApp.app */,
+				A0F55F8523476C330029C773 /* RizNewsAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0F55F7023476C250029C773 /* RizNewsApp */ = {
+			isa = PBXGroup;
+			children = (
+				A0F55F9423476C610029C773 /* Classes */,
+				A0F55F7123476C250029C773 /* AppDelegate.swift */,
+				A0F55F7323476C250029C773 /* ViewController.swift */,
+				A0F55F7523476C250029C773 /* Main.storyboard */,
+				A0F55F7B23476C330029C773 /* Assets.xcassets */,
+				A0F55F7D23476C330029C773 /* LaunchScreen.storyboard */,
+				A0F55F8023476C330029C773 /* Info.plist */,
+				A0F55F7823476C250029C773 /* RizNewsApp.xcdatamodeld */,
+			);
+			path = RizNewsApp;
+			sourceTree = "<group>";
+		};
+		A0F55F8823476C330029C773 /* RizNewsAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				A0F55F8923476C330029C773 /* RizNewsAppTests.swift */,
+				A0F55F8B23476C330029C773 /* Info.plist */,
+			);
+			path = RizNewsAppTests;
+			sourceTree = "<group>";
+		};
+		A0F55F9423476C610029C773 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7E3AFE282495FD260085681F /* Coordinator */,
+				A0F55F9723476C820029C773 /* Controller */,
+				A0F55F9623476C760029C773 /* ViewModel */,
+				A0F55F9523476C6A0029C773 /* Model */,
+				A0F55F9923476C990029C773 /* Helpers */,
+				A0F55F9823476C8D0029C773 /* View */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A0F55F9523476C6A0029C773 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A00E355A2347927500935F97 /* RZ_NewsModel.swift */,
+				A0FB91E12349FD2700A2DA60 /* RZ_UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A0F55F9623476C760029C773 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7E3AFE50249755440085681F /* News */,
+				7E3AFE4F249754EE0085681F /* TabView */,
+				7E3AFE47249721D90085681F /* Login */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A0F55F9723476C820029C773 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB91E82349FFA000A2DA60 /* TabViews */,
+				A0FB91E32349FF2400A2DA60 /* Main */,
+				7E3AFE4E24974C950085681F /* News */,
+				7E3AFE4D24974C650085681F /* Login */,
+				A085A4672349B0C500A2890E /* ControllerExtensions */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A0F55F9823476C8D0029C773 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A0F3242423489AE500199209 /* TableCells */,
+				A0F8A1E423489394006F53B4 /* UI */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A0F55F9923476C990029C773 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A00A5A0C234A0EE1000F5618 /* Extensions */,
+				A0F3242623489C0300199209 /* Common */,
+				A0F3242523489BE400199209 /* Services */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A0F8A1E423489394006F53B4 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A0F324202348981000199209 /* RZ_ActivityIndicatorView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		A0FB91E32349FF2400A2DA60 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A03515AE23477E8600CDD2A9 /* RZ_BaseView.swift */,
+				7E3AFE37249635430085681F /* RZ_MainTabView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		A0FB91E82349FFA000A2DA60 /* TabViews */ = {
+			isa = PBXGroup;
+			children = (
+				A0F55F9A23476F830029C773 /* RZ_HomeView.swift */,
+				A0F55F9C23476FDA0029C773 /* RZ_FavouriteView.swift */,
+				A0FA3AFA2347789500F88426 /* RZ_ProfileView.swift */,
+			);
+			path = TabViews;
+			sourceTree = "<group>";
+		};
+		C99043A7B544D0E280869319 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				71EB73C621BF3414EDE96CD4 /* Pods-RizNewsApp.debug.xcconfig */,
+				F56765AEB5ED707A81FCBA75 /* Pods-RizNewsApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A0F55F6D23476C250029C773 /* RizNewsApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0F55F8E23476C330029C773 /* Build configuration list for PBXNativeTarget "RizNewsApp" */;
+			buildPhases = (
+				9EF144436912D9CFE97BD0CB /* [CP] Check Pods Manifest.lock */,
+				A0F55F6A23476C250029C773 /* Sources */,
+				A0F55F6B23476C250029C773 /* Frameworks */,
+				A0F55F6C23476C250029C773 /* Resources */,
+				C5C632CD88AB03E88242E8BD /* [CP] Embed Pods Frameworks */,
+				A11BED4232FB8CBECC57586F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RizNewsApp;
+			productName = RizNewsApp;
+			productReference = A0F55F6E23476C250029C773 /* RizNewsApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A0F55F8423476C330029C773 /* RizNewsAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0F55F9123476C330029C773 /* Build configuration list for PBXNativeTarget "RizNewsAppTests" */;
+			buildPhases = (
+				A0F55F8123476C330029C773 /* Sources */,
+				A0F55F8223476C330029C773 /* Frameworks */,
+				A0F55F8323476C330029C773 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0F55F8723476C330029C773 /* PBXTargetDependency */,
+			);
+			name = RizNewsAppTests;
+			productName = RizNewsAppTests;
+			productReference = A0F55F8523476C330029C773 /* RizNewsAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0F55F6623476C250029C773 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = RizviOrganization;
+				TargetAttributes = {
+					A0F55F6D23476C250029C773 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					A0F55F8423476C330029C773 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = A0F55F6D23476C250029C773;
+					};
+				};
+			};
+			buildConfigurationList = A0F55F6923476C250029C773 /* Build configuration list for PBXProject "RizNewsApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A0F55F6523476C250029C773;
+			productRefGroup = A0F55F6F23476C250029C773 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0F55F6D23476C250029C773 /* RizNewsApp */,
+				A0F55F8423476C330029C773 /* RizNewsAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0F55F6C23476C250029C773 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0F55F7F23476C330029C773 /* LaunchScreen.storyboard in Resources */,
+				A0F55F7C23476C330029C773 /* Assets.xcassets in Resources */,
+				A0F55F7723476C250029C773 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0F55F8323476C330029C773 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9EF144436912D9CFE97BD0CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RizNewsApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A11BED4232FB8CBECC57586F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RizNewsApp/Pods-RizNewsApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5C632CD88AB03E88242E8BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RizNewsApp/Pods-RizNewsApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/FTPopOverMenu_Swift/FTPopOverMenu_Swift.framework",
+				"${BUILT_PRODUCTS_DIR}/HexColors/HexColors.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FTPopOverMenu_Swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HexColors.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftMessages.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RizNewsApp/Pods-RizNewsApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0F55F6A23476C250029C773 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A085A4712349C70B00A2890E /* RZ_FavouriteView+Extension.swift in Sources */,
+				A0FA3AFB2347789500F88426 /* RZ_ProfileView.swift in Sources */,
+				7E3AFE44249719ED0085681F /* Coordinator+Extension.swift in Sources */,
+				A033C51323488B4E00060C5A /* RZ_HomeViewModel.swift in Sources */,
+				A085A46F2349C67900A2890E /* RZ_HomeView+Extension.swift in Sources */,
+				A01E17772347AACA002B8880 /* RZ_NewsTableCell.swift in Sources */,
+				A01C7326234B1EFD000EAE53 /* RZ_LoginView+Extension.swift in Sources */,
+				A00A5A0E234A0F06000F5618 /* RZ_TextField.swift in Sources */,
+				7E3AFE4A249723E90085681F /* NewsCell+Extension.swift in Sources */,
+				A0F55F7A23476C250029C773 /* RizNewsApp.xcdatamodeld in Sources */,
+				A0F55F9D23476FDA0029C773 /* RZ_FavouriteView.swift in Sources */,
+				A02B5CC22348FD3C0059CA70 /* RZ_NewsDetailViewModel.swift in Sources */,
+				A0710A61234A3B5F005A2CC7 /* RZ_ProfileView+Extension.swift in Sources */,
+				A03515B3234780A400CDD2A9 /* RZ_NewsDetailView.swift in Sources */,
+				7E3AFE42249663310085681F /* RZ_NewsWebsiteViewModel.swift in Sources */,
+				A03027592347B812002A82FD /* RZ_BaseCell.swift in Sources */,
+				A0114F52234B2847006D2238 /* RZ_String.swift in Sources */,
+				A065ECC3234A61C800932587 /* RZ_RegisterViewModel.swift in Sources */,
+				A0F324212348981000199209 /* RZ_ActivityIndicatorView.swift in Sources */,
+				7E3AFE2C2495FD8F0085681F /* LoginCoordinator.swift in Sources */,
+				A0F99F662348CFAF007125EE /* RZ_FavouriteViewModel.swift in Sources */,
+				7E3AFE4C249724000085681F /* NewsDetailCell+Extension.swift in Sources */,
+				A085A46D2349C4D500A2890E /* RZ_NewsWebsite+Extension.swift in Sources */,
+				7E3AFE3624962EF30085681F /* HomeCoordinator.swift in Sources */,
+				A0F55F7423476C250029C773 /* ViewController.swift in Sources */,
+				A01C7328234B1F37000EAE53 /* RZ_RegisterView+Extension.swift in Sources */,
+				A03515AF23477E8600CDD2A9 /* RZ_BaseView.swift in Sources */,
+				7E3AFE32249616C60085681F /* RZ_LoginViewModel.swift in Sources */,
+				A0F55F7223476C250029C773 /* AppDelegate.swift in Sources */,
+				7E3AFE3C2496384E0085681F /* ProfileCoordinator.swift in Sources */,
+				A02B5CC02348F9760059CA70 /* RZ_NewsDetailTableCell.swift in Sources */,
+				7E3AFE3A249637620085681F /* FavouriteCoordinator.swift in Sources */,
+				7E3AFE4024964DE20085681F /* NewsWebCoordinator.swift in Sources */,
+				A0F55F9B23476F830029C773 /* RZ_HomeView.swift in Sources */,
+				A01E17752347A179002B8880 /* RZ_Constant.swift in Sources */,
+				A03515B5234784B000CDD2A9 /* RZ_GeneralService.swift in Sources */,
+				A03515B92347860D00CDD2A9 /* RZ_NewsViewModel.swift in Sources */,
+				A00E355B2347927500935F97 /* RZ_NewsModel.swift in Sources */,
+				7E3AFE38249635430085681F /* RZ_MainTabView.swift in Sources */,
+				7E3AFE342496186D0085681F /* RegisterCoordinator.swift in Sources */,
+				A01E17792347AF85002B8880 /* RZ_Utility.swift in Sources */,
+				A0F32423234899AB00199209 /* RZ_Messages.swift in Sources */,
+				7E3AFE2A2495FD540085681F /* Coordinator.swift in Sources */,
+				A0FB91E52349FF6B00A2DA60 /* RZ_LoginView.swift in Sources */,
+				A0710A5F234A39B7005A2CC7 /* RZ_ProfileViewModel.swift in Sources */,
+				7E3AFE3E249641E80085681F /* NewsDetailCoordinator.swift in Sources */,
+				A0FB91E72349FF8000A2DA60 /* RZ_RegisterView.swift in Sources */,
+				A0FB91E22349FD2700A2DA60 /* RZ_UserModel.swift in Sources */,
+				A085A4692349B0F800A2890E /* RZ_NewsDetailView+Extension.swift in Sources */,
+				A085A46B2349B25700A2890E /* RZ_NewsWebsite.swift in Sources */,
+				A03515B72347856D00CDD2A9 /* RZ_Services.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0F55F8123476C330029C773 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0F55F8A23476C330029C773 /* RizNewsAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A0F55F8723476C330029C773 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0F55F6D23476C250029C773 /* RizNewsApp */;
+			targetProxy = A0F55F8623476C330029C773 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A0F55F7523476C250029C773 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0F55F7623476C250029C773 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A0F55F7D23476C330029C773 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0F55F7E23476C330029C773 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A0F55F8C23476C330029C773 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A0F55F8D23476C330029C773 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A0F55F8F23476C330029C773 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71EB73C621BF3414EDE96CD4 /* Pods-RizNewsApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RizNewsApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.RizNewsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A0F55F9023476C330029C773 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F56765AEB5ED707A81FCBA75 /* Pods-RizNewsApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RizNewsApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.RizNewsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A0F55F9223476C330029C773 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RizNewsAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.RizNewsAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RizNewsApp.app/RizNewsApp";
+			};
+			name = Debug;
+		};
+		A0F55F9323476C330029C773 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RizNewsAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.RizNewsAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RizNewsApp.app/RizNewsApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0F55F6923476C250029C773 /* Build configuration list for PBXProject "RizNewsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0F55F8C23476C330029C773 /* Debug */,
+				A0F55F8D23476C330029C773 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0F55F8E23476C330029C773 /* Build configuration list for PBXNativeTarget "RizNewsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0F55F8F23476C330029C773 /* Debug */,
+				A0F55F9023476C330029C773 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0F55F9123476C330029C773 /* Build configuration list for PBXNativeTarget "RizNewsAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0F55F9223476C330029C773 /* Debug */,
+				A0F55F9323476C330029C773 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A0F55F7823476C250029C773 /* RizNewsApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A0F55F7923476C250029C773 /* RizNewsApp.xcdatamodel */,
+			);
+			currentVersion = A0F55F7923476C250029C773 /* RizNewsApp.xcdatamodel */;
+			path = RizNewsApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A0F55F6623476C250029C773 /* Project object */;
+}
